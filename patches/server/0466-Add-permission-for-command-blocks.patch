@@ -5,10 +5,10 @@ Subject: [PATCH] Add permission for command blocks
 
 
 diff --git a/src/main/java/net/minecraft/server/level/ServerPlayerGameMode.java b/src/main/java/net/minecraft/server/level/ServerPlayerGameMode.java
-index b932580dc10703c8a7dbecd4cf38954872f1cab6..51d7c59e6b3f4ca84905b186d9b173ec2c36a0b1 100644
+index 3f7919f4e8f5a5b79bf4e541ea5f4ce482965fa1..81275857101522b2bb8824313159744036a1cc4f 100644
 --- a/src/main/java/net/minecraft/server/level/ServerPlayerGameMode.java
 +++ b/src/main/java/net/minecraft/server/level/ServerPlayerGameMode.java
-@@ -391,7 +391,7 @@ public class ServerPlayerGameMode {
+@@ -392,7 +392,7 @@ public class ServerPlayerGameMode {
              BlockEntity tileentity = this.level.getBlockEntity(pos);
              Block block = iblockdata.getBlock();
  
@@ -18,7 +18,7 @@ index b932580dc10703c8a7dbecd4cf38954872f1cab6..51d7c59e6b3f4ca84905b186d9b173ec
                  return false;
              } else if (this.player.blockActionRestricted((Level) this.level, pos, this.gameModeForPlayer)) {
 diff --git a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
-index 15762cb1a627b4b23353a8e9c65465a9c44faaa0..f6f243552a73d17a5ac26a945822935a2562ba2e 100644
+index d6fc3ed5339f974b826123d4833045527007ae6e..70c9cfa62af326ee030c4e70fc3d120c82a82a4c 100644
 --- a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 +++ b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 @@ -787,7 +787,7 @@ public class ServerGamePacketListenerImpl implements ServerPlayerConnection, Ser

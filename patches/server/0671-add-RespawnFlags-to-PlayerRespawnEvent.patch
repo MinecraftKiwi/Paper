@@ -5,7 +5,7 @@ Subject: [PATCH] add RespawnFlags to PlayerRespawnEvent
 
 
 diff --git a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
-index d11282c6c39a90dfb4c773aced4b4f0ada33c5fb..351c293d794d77750740df2e64129786f47cd0fa 100644
+index 38ab031b1f8d9d923efa6686d81b31288efac8b1..a0a2839f4c746f1a76b700241da0a32c2736a558 100644
 --- a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 +++ b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 @@ -2440,7 +2440,7 @@ public class ServerGamePacketListenerImpl implements ServerPlayerConnection, Ser

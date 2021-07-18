@@ -57,7 +57,7 @@ index 708ac03d5a849bf09c49547306e4a8c5a5ef8d91..5a8df368a4a25839cd4ac9be6972da2e
          }
  
 diff --git a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
-index 32538258b8af2a239f9ab6d6ab4eac7a1f517653..784fc77a5b98f1e085edc4aea3c6bed524b1fb0e 100644
+index fa77ff7be0f9d499461de0f42da302fca2a43c9f..c4c3c9c19ce0d35c8d7937f5d166412872fbdf1b 100644
 --- a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 +++ b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 @@ -320,7 +320,7 @@ public class ServerGamePacketListenerImpl implements ServerPlayerConnection, Ser
@@ -342,7 +342,7 @@ index fffb31c761625b803ac397799af890df84f26951..65657c009f6d5a5d5740e80f912a5893
          // CraftBukkit end
  
 diff --git a/src/main/java/org/bukkit/craftbukkit/entity/CraftPlayer.java b/src/main/java/org/bukkit/craftbukkit/entity/CraftPlayer.java
-index c283d1cb8ba22ba87de1433cbbbcf1d0075a1151..7b8885f48245c37ba7166abd44486027779e134e 100644
+index 26ffc901c3a57cb0d85982083d2b0eb6e0f26b69..9f8f3ad5fd2c9e43a5b99804e404f11e5056897f 100644
 --- a/src/main/java/org/bukkit/craftbukkit/entity/CraftPlayer.java
 +++ b/src/main/java/org/bukkit/craftbukkit/entity/CraftPlayer.java
 @@ -499,16 +499,21 @@ public class CraftPlayer extends CraftHumanEntity implements Player {

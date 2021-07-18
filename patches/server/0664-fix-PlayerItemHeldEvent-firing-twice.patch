@@ -5,7 +5,7 @@ Subject: [PATCH] fix PlayerItemHeldEvent firing twice
 
 
 diff --git a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
-index 9038d3c5683588fc6b2e1ef6dacc3e889eeb05f0..d11282c6c39a90dfb4c773aced4b4f0ada33c5fb 100644
+index 89867d1dce38400a70efa0758b46397dcb3f64f9..38ab031b1f8d9d923efa6686d81b31288efac8b1 100644
 --- a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 +++ b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 @@ -1906,6 +1906,7 @@ public class ServerGamePacketListenerImpl implements ServerPlayerConnection, Ser

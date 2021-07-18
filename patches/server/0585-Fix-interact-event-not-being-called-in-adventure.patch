@@ -6,7 +6,7 @@ Subject: [PATCH] Fix interact event not being called in adventure
 Call PlayerInteractEvent when left-clicking on a block in adventure mode
 
 diff --git a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
-index 11cc3a6f04371b9217c201fd5d583213c2fbe57d..7318dc5e3ed94a00b675912e2c73c53aee9e93d4 100644
+index 946d537c3049a884a175b20bd79fc97dc762f0f1..99cbf29c7a9928a140fdc3fd2a4516731670507b 100644
 --- a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 +++ b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 @@ -1713,7 +1713,7 @@ public class ServerGamePacketListenerImpl implements ServerPlayerConnection, Ser
